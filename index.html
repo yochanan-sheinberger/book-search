@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Book Search</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Book Search</h1>
+      <div class="book-shelf-wrapper">
+        <img class="book-shelf" src="./assets/book-shelf.png" alt="" />
+        <div class="spider">
+          <img src="./assets/spider.png" alt="" />
+          <div class="left-eye eye"></div>
+          <div class="right-eye eye"></div>
+        </div>
+        <div class="cobweb"></div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="search">
+        <input
+          type="search"
+          class="search-input"
+          placeholder="Type Book Name..."
+        />
+        <button class="search-btn">Search</button>
+      </div>
+      <div class="total" style="display: none">
+        <figure>
+          <img src="./assets/happy-book.png" class="book-face" alt="" />
+        </figure>
+        <div>
+          Found <span class="total-number">0</span> search results for <span
+            class="term"
+          ></span>
+        </div>
+      </div>
+      <div>
+        <div class="search-result">
+          <ul class="book-list"></ul>
+        </div>
+        <div class="pagination" style="display: none">
+          <button onclick="prevPage()">
+            <img src="./assets/book-left.png" alt="" />
+          </button>
+          <div class="page-num">1</div>
+          <button onclick="nextPage()">
+            <img src="./assets/book-right.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
