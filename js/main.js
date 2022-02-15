@@ -14,8 +14,8 @@ const cobweb = document.querySelector(".cobweb");
 
 const cough = document.createElement("audio");
 const shhh = document.createElement("audio");
-cough.src = "../assets/cough1.mp3";
-shhh.src = "../assets/shhhh.mp3";
+cough.src = "https://yochanan-sheinberger.github.io/book-search/assets/cough1.mp3";
+shhh.src = "https://yochanan-sheinberger.github.io/book-search/assets/shhhh.mp3";
 shhh.volume = 0.1;
 
 let term = "";
