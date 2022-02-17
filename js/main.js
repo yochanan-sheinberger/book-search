@@ -105,10 +105,10 @@ function createParagraph(content) {
 function createImg(src) {
   const figure = document.createElement("figure");
   figure.classList = "book-img";
-  figure.style.backgroundImage = `url('${src}')`;
+  figure.style.backgroundImage = `url('${src ? src : './assets/no-image-6663.png'}')`;
   figure.style.backgroundRepeat = "no-repeat";
-  figure.style.backgroundSize = "cover";
-  figure.style.backgroundPositionX = "center";
+  figure.style.backgroundSize = src ? "cover" : "25%";
+  figure.style.backgroundPosition = "center";
   return figure;
 }
 

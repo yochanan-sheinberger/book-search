@@ -140,6 +140,7 @@ li {
   margin: 0;
   box-shadow: 2px 0px 6px 0px #d6dbd8;
   border-radius: 10px 0 0 10px;
+  background-color: #5aac7c;
 }
 
 .card-body {
