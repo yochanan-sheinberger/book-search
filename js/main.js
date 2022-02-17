@@ -48,12 +48,12 @@ function search() {
       termDOM.innerHTML = `"${term}"`;
       if (res.totalItems) {
         totalResults = res.totalItems;
-        bookFace.src = "../assets/happy-book.png";
+        bookFace.src = "./assets/happy-book.png";
         createBookListElement(res.items);
       } else {
         searchResult.innerHTML = "";
         pagination.style.display = "none";
-        bookFace.src = "../assets/sad-book.png";
+        bookFace.src = "./assets/sad-book.png";
       }
     });
 }
